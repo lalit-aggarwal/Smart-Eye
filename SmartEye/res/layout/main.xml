@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent" android:layout_height="match_parent"
+	android:gravity="center" android:background="@drawable/bg" android:onClick="openCamera">
+	<ImageView android:id="@+id/headerlogo"
+		android:layout_height="wrap_content"
+		android:layout_width="wrap_content" android:layout_alignParentTop="true" android:background="@drawable/nm"></ImageView>
+	<RelativeLayout android:id="@+id/relativeLayout1"
+		android:layout_below="@+id/headerlogo" android:layout_alignLeft="@+id/headerlogo"
+		android:layout_alignRight="@+id/headerlogo" android:gravity="center"
+		android:layout_width="wrap_content" android:layout_marginTop="30dip" android:layout_height="250dip">
+
+		<Button android:layout_width="wrap_content" android:onClick="openCamera"
+			android:layout_height="100dip"
+			android:id="@+id/butCamera" android:clickable="true" android:background="@drawable/camera"/>
+
+		<Button android:layout_width="wrap_content" android:onClick="openGallery"
+			android:layout_alignParentRight="true" android:layout_height="100dip"
+			android:id="@+id/butGallery" android:clickable="true" android:background="@drawable/gallery"></Button>
+			
+		<Button android:layout_height="70dip"
+			android:layout_width="70dip" android:layout_alignParentBottom="true"
+			android:layout_centerHorizontal="true" android:id="@+id/butExit"
+			android:clickable="true" android:background="@drawable/exit" android:onClick="exitApp"></Button>
+
+	</RelativeLayout>
+</RelativeLayout>
